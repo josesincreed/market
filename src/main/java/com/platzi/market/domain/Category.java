@@ -2,10 +2,12 @@ package com.platzi.market.domain;
 
 public class Category {
 
+    // Attributes mapper
     private int categoryId;
     private String category;
     private boolean active;
 
+    // Getters and Setters
     public int getCategoryId() {
         return categoryId;
     }

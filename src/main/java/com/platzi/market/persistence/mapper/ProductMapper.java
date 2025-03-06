@@ -12,6 +12,7 @@ import java.util.List;
 @Mapper(componentModel = "spring" , uses = {CategoryMapper.class}) // Se indica que se usará el CategoryMapper
 public interface ProductMapper {
 
+    // Mapeo de la clase Product a Producto
     @Mappings({
             @Mapping(source = "idProducto", target = "productId"),
             @Mapping(source = "nombre", target = "name"),
@@ -23,9 +24,10 @@ public interface ProductMapper {
     })
     Product toProduct(Producto producto); // Mapea de Producto a Product
 
-    List<Product> toProducts(List<Producto> productos); // Mapea una lista de productos
+    List<Product> toProducts(List<Producto> productos); // Mapea una lista de Producto a Product
 
     @InheritInverseConfiguration // Invierte el mapeo
     @Mapping(target = "codigoBarras", ignore = true) // Ignora el mapeo de codigoBarras
-    Producto toProduct(Product product); // Mapea de Producto a Product
+
+    Producto toProducto(Product product); // Mapea de Product a Producto
 }

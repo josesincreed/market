@@ -7,6 +7,7 @@ import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 import java.util.Optional;
 
+// Crud repository encuentra la lista de productos
 public interface ProductoCrudRepository extends CrudRepository<Producto, Integer> {
 
     //Query methods encuentra una lista de productos, segun la categoria, en orden alfabético

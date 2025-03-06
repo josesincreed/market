@@ -2,6 +2,7 @@ package com.platzi.market.domain;
 
 public class Product {
 
+    // Attributes mapper
     private int productId;
     private String name;
     private int categoryId;
@@ -10,10 +11,10 @@ public class Product {
     private boolean active;
     private Category category;
 
+    // Getters and Setters
     public int getProductId() {
         return productId;
     }
-
     public void setProductId(int productId) {
         this.productId = productId;
     }
