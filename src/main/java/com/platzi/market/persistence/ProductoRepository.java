@@ -15,7 +15,7 @@ import java.util.Optional;
 @Repository
 public class ProductoRepository implements ProductRepository {
 
-    // Inyección de dependencia
+    // Inyección de dependencias que tengan que ver con Spring
     @Autowired
     private ProductoCrudRepository productoCrudRepository;
 

@@ -11,10 +11,12 @@ public class Product {
     private boolean active;
     private Category category;
 
-    // Getters and Setters
+    //getters and setters
+
     public int getProductId() {
         return productId;
     }
+
     public void setProductId(int productId) {
         this.productId = productId;
     }

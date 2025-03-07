@@ -7,7 +7,9 @@ public class Category {
     private String category;
     private boolean active;
 
-    // Getters and Setters
+    //getters and setters
+
+
     public int getCategoryId() {
         return categoryId;
     }
