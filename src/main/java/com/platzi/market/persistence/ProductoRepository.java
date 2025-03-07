@@ -49,9 +49,12 @@ public class ProductoRepository implements ProductRepository {
     // Crud repository guarda un producto
     @Override
     public Product save(Product product) {
-        Producto producto = mapper.toProducto(product); // Mapea un product
-        return mapper.toProduct(productoCrudRepository.save(producto)); // Guarda un producto
-    } 
+        Producto producto = mapper.toProducto(product); //se agrega una validación para que el id sea null y no genere error
+        if (producto.getIdProducto() == 0) {
+            producto.setIdProducto(null);
+        }
+        return mapper.toProduct(productoCrudRepository.save(producto));
+    }
     
     @Override
     public void delete(int productId) {

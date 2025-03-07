@@ -29,10 +29,12 @@ public class ProductController {
     public Optional<List<Product>> getByCategory(@PathVariable("categoryId") int categoryId) {
         return productService.getByCategory(categoryId);
     }
+
     @PostMapping("/save")
     public Product save(@RequestBody Product product) {
         return productService.save(product);
     }
+
     @DeleteMapping("/delete/{id}")
     public boolean delete(@PathVariable("id") int productId) {
         return productService.delete(productId);
