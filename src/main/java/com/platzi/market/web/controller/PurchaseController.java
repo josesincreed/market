@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/purchases")
+@RequestMapping("/purchases") // Definimos la URL base para todos los endpoints de este controlador
 public class PurchaseController {
 
     @Autowired
