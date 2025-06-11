@@ -2,7 +2,7 @@ package com.platzi.market.domain;
 
 public class Category {
 
-    // Attributes mapper
+    // Attributes mapper domain
     private int categoryId;
     private String category;
     private boolean active;

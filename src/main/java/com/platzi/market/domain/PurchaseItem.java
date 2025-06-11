@@ -3,6 +3,7 @@ package com.platzi.market.domain;
 
 public class PurchaseItem {
 
+    //attributes mapper domain
     private int productId;
     private int quantity;
     private double total;

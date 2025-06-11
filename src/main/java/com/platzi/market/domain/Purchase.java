@@ -6,6 +6,7 @@ import java.util.List;
 
 public class Purchase {
 
+    // Attributes mapper domain
     private int purchaseId;
     private String clientId;
     private LocalDateTime date;
