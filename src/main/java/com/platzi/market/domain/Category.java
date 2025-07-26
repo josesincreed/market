@@ -8,8 +8,6 @@ public class Category {
     private boolean active;
 
     //getters and setters
-
-
     public int getCategoryId() {
         return categoryId;
     }
